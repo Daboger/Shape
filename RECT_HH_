@@ -1,0 +1,15 @@
++#ifndef RECT_HH_
++#define RECT_HH_
++
++#include "Shape.hh"
++class Rect : public Shape {
++private:
++	double x, y, w, h;
++public:
++	Circle(double x, double y, double w, double h) : x(x), y(y), w(w), h(h) {}
++	double area() const {return w*h};
++  double perimeter() const {return 2*(w+h)};
++
++};
++
++#endif
