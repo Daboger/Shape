@@ -1,0 +1,15 @@
+#ifndef CIRCLE_HH_
+#define CIRCLE_HH_
+
+#include "Shape.hh"
+class Circle : public Shape {
+private:
+	double x, y, r;
+public:
+	Circle(double x, double y, double r) : x(x), y(y), r(r) {}
+	double area() const;
+  double perimeter() const;
+
+};
+
+#endif
